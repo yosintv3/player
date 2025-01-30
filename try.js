@@ -19,4 +19,5 @@ function play_stream(url) {
     }
 }
 
-var url = new URL(window.location.href).searchParams.get("url");
+var url = window.location.href.split("#")[1];
+play_stream(url);
