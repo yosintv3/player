@@ -25,7 +25,25 @@
     <script charset="utf-8" src="//cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
     <script charset="utf-8" src="//cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
 
-    <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://whacmoltibsay.net/tag.min.js',7463304,document.body||document.documentElement)</script>
+
+<!-- Works After Few Seconds-->
+  <script>
+    (function () {
+    const storageKey = "lastAdLoadTime";
+    const delayBeforeLoading = 5000; // 5 seconds
+
+    function loadAdsScript() {
+        (function(s, u, z, p) {
+            s.src = u;
+            s.setAttribute("data-zone", z);
+            p.appendChild(s);
+        })(document.createElement("script"), "https://whacmoltibsay.net/tag.min.js", 7463304, document.body || document.documentElement);
+    }
+
+    setTimeout(loadAdsScript, delayBeforeLoading);
+})();
+
+</script>
 
     
 </head>
