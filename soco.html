@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JWPlayer Example</title>
+    <title>Soco Live</title>
     <script src='https://yosintv3.github.io/player/SAHhwvZq.js'></script>
 </head>
 <body>
@@ -21,12 +21,12 @@
         }
 
         // Get the 'file' parameter from the URL
-        const fileUrl = getUrlParameter('url');
+        const fileUrl = getUrlParameter('file');
 
         // Setup JWPlayer
         if (fileUrl) {
             jwplayer("jwplayerDiv").setup({
-                url: fileUrl,
+                file: fileUrl,
                 position: 'bottom',
                 autostart: true,
                 stretching: "",
